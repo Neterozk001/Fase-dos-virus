@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"TileSet1",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"Chao","closed_edge":false,"name":"Chao","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,92,19,29,21,31,57,67,55,65,26,91,
+        62,93,95,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"TileSet1",
+  "out_columns":13,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"Sprite8",
+    "path":"sprites/Sprite8/Sprite8.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":180,
+}
