@@ -5,7 +5,8 @@ offset_y = 0;
 
 parent_block = noone; // Meu pai direto
 child_list = [];      // Lista de todos os meus descendentes (em ordem)
-child_block = noone;  // Meu filho direto (o próximo na corrente)
+child_block = noone; // Meu filho direto (o próximo na corrente)
+block_state = 0; // Status do bloco, 0 - Normal, 1 - Erro, 2 - Sucesso
 
 // Esta função percorre a corrente e monta o array com os IDs
 update_my_children_list = function() {

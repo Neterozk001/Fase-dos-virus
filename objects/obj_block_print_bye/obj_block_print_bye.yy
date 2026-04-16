@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block_start",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_block_print_bye",
+  "eventList":[],
   "managed":true,
-  "name":"obj_block_start",
+  "name":"obj_block_print_bye",
   "overriddenProperties":[],
   "parent":{
     "name":"Blocos",
@@ -33,9 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_block_start",
-    "path":"sprites/spr_block_start/spr_block_start.yy",
+    "name":"spr_block_print_bye",
+    "path":"sprites/spr_block_print_bye/spr_block_print_bye.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_block_print",
+    "path":"sprites/spr_block_print/spr_block_print.yy",
+  },
   "visible":true,
 }
