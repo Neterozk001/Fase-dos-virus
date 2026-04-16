@@ -11,6 +11,7 @@ if (!is_dragging && parent_block != noone && instance_exists(parent_block)) {
 
 // 2. CLICAR E DESCONECTAR (Quebrar a corrente)
 if (mouse_check_button_pressed(mb_left)) {
+	if (object_index == obj_block_start) exit;
     var top_block = instance_position(mouse_x, mouse_y, obj_block_base);
     
     if (top_block == id) {
@@ -32,6 +33,12 @@ if (mouse_check_button_pressed(mb_left)) {
 if (is_dragging) {
     x = mouse_x + offset_x;
     y = mouse_y + offset_y;
+	block_state = 0;
+	var child_list = update_my_children_list()
+	for(i = 0; i<array_length(child_list); i++){
+		id.block_state = 0;
+		child_list[i].block_state = 0;
+	}
     
     if (instance_exists(child_block)) {
         child_block.x = x;
@@ -45,7 +52,9 @@ if (is_dragging) {
         depth = 0;
         
 		// Preparando a lista de filhos
-		var child_list = update_my_children_list()
+		child_list = update_my_children_list()
+		
+		
 		var children_count = array_length(child_list)
 		
 		// Quando eu sou solto, tento conectar com um bloco acima ou abaixo
@@ -61,6 +70,7 @@ if (is_dragging) {
         // --- CONEXÃO POR BAIXO (Eu pescando um filho) ---
 		// Se tenho filhos, meu último filho irá tentar pescar, se não tenho, serei eu mesmo
         else{
+		
 			var last_child = id;
 			if(children_count > 0){
 				last_child = child_list[children_count - 1]
@@ -69,12 +79,25 @@ if (is_dragging) {
 			var target_below = instance_place(last_child.x, last_child.y + 17, obj_block_base);
 			
 			if (target_below != noone && target_below != id && target_below.parent_block == noone) {
-            last_child.child_block = target_below;
-            target_below.parent_block = last_child;
+				if (target_below.object_index != obj_block_start) {
+		            last_child.child_block = target_below;
+					target_below.parent_block = last_child;
+			}
+            
         }
 		}
 		
         var lista = update_my_children_list();
-        show_debug_message("Minha corrente atual: " + string(lista));
+        show_debug_message("Blocos conectados: " + string(lista));
     }
+}
+
+// 4 - Estado de erro
+
+if (block_state == 1) {
+    image_blend = c_red; // Fica vermelho
+}else if(block_state == 2){
+	image_blend = c_lime; // Fica verde
+} else {
+    image_blend = c_white; // Fica normal
 }
