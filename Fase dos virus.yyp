@@ -28,7 +28,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.1400.5.1043",
   },
   "name":"Fase dos virus",
   "resources":[
@@ -44,6 +44,7 @@
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Obj_Virus01","path":"objects/Obj_Virus01/Obj_Virus01.yy",},},
     {"id":{"name":"Blocos_1","path":"rooms/Blocos_1/Blocos_1.yy",},},
+    {"id":{"name":"Blocos_2","path":"rooms/Blocos_2/Blocos_2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"S_chao","path":"sprites/S_chao/S_chao.yy",},},
     {"id":{"name":"S_Player_fall","path":"sprites/S_Player_fall/S_Player_fall.yy",},},
@@ -70,6 +71,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Blocos_1","path":"rooms/Blocos_1/Blocos_1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Blocos_2","path":"rooms/Blocos_2/Blocos_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -3,10 +3,12 @@ fase_check = [obj_block_start, obj_block_print_hello, obj_block_print_bye];
 // Variáveis de inicialização
 var largura_alvo = 1280;
 var altura_alvo = 720;
-window_set_size(largura_alvo, altura_alvo);
+window_set_size(largura_alvo, altura_alvo);	
 
 display_set_gui_size(largura_alvo, altura_alvo);
 alarm = 1;
+vitoria = false;
+tempo_vitoria = 0;
 
 function compile_code(){
 	var start = instance_find(obj_block_start, 0)
@@ -40,7 +42,7 @@ function compile_code(){
 		}
 	}
 	
-	if(error = 1){
+	if(error == 1){
 		return false
 	}
 	
