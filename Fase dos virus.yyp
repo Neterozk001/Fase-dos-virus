@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Fases","folderPath":"folders/Fases.yy","name":"Fases","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level","folderPath":"folders/Sprites/Level.yy","name":"Level","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -30,15 +31,20 @@
   "resources":[
     {"id":{"name":"Obj_chao","path":"objects/Obj_chao/Obj_chao.yy",},},
     {"id":{"name":"Obj_Entidade","path":"objects/Obj_Entidade/Obj_Entidade.yy",},},
+    {"id":{"name":"Obj_inimigo_pai","path":"objects/Obj_inimigo_pai/Obj_inimigo_pai.yy",},},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Obj_Virus01","path":"objects/Obj_Virus01/Obj_Virus01.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"S_chao","path":"sprites/S_chao/S_chao.yy",},},
     {"id":{"name":"S_Player_fall","path":"sprites/S_Player_fall/S_Player_fall.yy",},},
     {"id":{"name":"S_Player_jump","path":"sprites/S_Player_jump/S_Player_jump.yy",},},
     {"id":{"name":"S_Player_run","path":"sprites/S_Player_run/S_Player_run.yy",},},
     {"id":{"name":"S_Player","path":"sprites/S_Player/S_Player.yy",},},
     {"id":{"name":"S_Playerparado","path":"sprites/S_Playerparado/S_Playerparado.yy",},},
+    {"id":{"name":"S_Virus01_dano","path":"sprites/S_Virus01_dano/S_Virus01_dano.yy",},},
+    {"id":{"name":"S_Virus01_morto","path":"sprites/S_Virus01_morto/S_Virus01_morto.yy",},},
     {"id":{"name":"S_Virus01_parado","path":"sprites/S_Virus01_parado/S_Virus01_parado.yy",},},
     {"id":{"name":"S_Virus01_run","path":"sprites/S_Virus01_run/S_Virus01_run.yy",},},
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},
@@ -51,6 +57,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
