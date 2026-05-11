@@ -42,6 +42,16 @@ else //não estou no chão
 	else
 	{
 		sprite_index = S_Player_fall;
+		//se eu estou caindo eu posso causar dano
+		var _inimigo = instance_place(x, y + 1, Obj_inimigo_pai);
+		//se eu cair no inimigo
+		if (_inimigo)
+		{
+			//eu subo pra cima de novo
+			velv = -vel_jump;
+			//avisando que o inimigo tomou dano
+			_inimigo.dano = true;
+		}
 	}
 	velv += grav;
 	if (velh != 0)
