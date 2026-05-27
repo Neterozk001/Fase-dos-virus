@@ -4,6 +4,12 @@ vel  = 4;
 grav = .3;
 vel_jump = 10;
 
+dano = false;
+tempo_dano = room_speed * 0.5;
+timer_dano = 0;
+inv_tempo = room_speed * 2;
+inv_timer = 0;
+
 inputs = {
 	left : ord("A"),
 	right : ord("D"),
