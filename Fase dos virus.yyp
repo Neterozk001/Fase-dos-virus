@@ -61,6 +61,8 @@
     {"id":{"name":"S_reiniciar","path":"sprites/S_reiniciar/S_reiniciar.yy",},},
     {"id":{"name":"S_resposta_A","path":"sprites/S_resposta_A/S_resposta_A.yy",},},
     {"id":{"name":"S_resposta_B","path":"sprites/S_resposta_B/S_resposta_B.yy",},},
+    {"id":{"name":"S_resposta_C","path":"sprites/S_resposta_C/S_resposta_C.yy",},},
+    {"id":{"name":"S_resposta_D","path":"sprites/S_resposta_D/S_resposta_D.yy",},},
     {"id":{"name":"S_Virus01_dano","path":"sprites/S_Virus01_dano/S_Virus01_dano.yy",},},
     {"id":{"name":"S_Virus01_morto","path":"sprites/S_Virus01_morto/S_Virus01_morto.yy",},},
     {"id":{"name":"S_Virus01_parado","path":"sprites/S_Virus01_parado/S_Virus01_parado.yy",},},
