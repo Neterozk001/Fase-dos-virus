@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_opcao2",
+  "%Name":"obj_parabens",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_opcao2",
+  "name":"obj_parabens",
   "overriddenProperties":[],
   "parent":{
     "name":"Obj_pergunta1",
@@ -30,13 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"S_resposta_B",
-    "path":"sprites/S_resposta_B/S_resposta_B.yy",
-  },
-  "spriteMaskId":{
-    "name":"S_pergunta03",
-    "path":"sprites/S_pergunta03/S_pergunta03.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }
