@@ -2,10 +2,23 @@
   "$GMSprite":"v2",
   "%Name":"S_resposta_C",
   "bboxMode":0,
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae81cd3 (teste)
   "bbox_bottom":161,
   "bbox_left":0,
   "bbox_right":652,
   "bbox_top":0,
+<<<<<<< HEAD
+=======
+  "bbox_bottom":914,
+  "bbox_left":96,
+  "bbox_right":748,
+  "bbox_top":753,
+>>>>>>> e9a3833 (teste)
+=======
+>>>>>>> ae81cd3 (teste)
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,7 +29,15 @@
   ],
   "gridX":0,
   "gridY":0,
+<<<<<<< HEAD
+<<<<<<< HEAD
   "height":162,
+=======
+  "height":1024,
+>>>>>>> e9a3833 (teste)
+=======
+  "height":162,
+>>>>>>> ae81cd3 (teste)
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"43c46218-b3fa-4967-ac25-3728681d516e","blendMode":0,"displayName":"default","isLocked":false,"name":"43c46218-b3fa-4967-ac25-3728681d516e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +107,13 @@
   },
   "type":0,
   "VTile":false,
+<<<<<<< HEAD
+<<<<<<< HEAD
   "width":653,
+=======
+  "width":1536,
+>>>>>>> e9a3833 (teste)
+=======
+  "width":653,
+>>>>>>> ae81cd3 (teste)
 }
