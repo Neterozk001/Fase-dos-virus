@@ -1,0 +1,1 @@
+sprite_index = S_resposta_B_Correta;
