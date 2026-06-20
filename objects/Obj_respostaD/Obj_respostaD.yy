@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_opcao2",
+  "%Name":"Obj_respostaD",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_opcao2",
+  "name":"Obj_respostaD",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Perguntas2",
+    "path":"folders/Objetos/Perguntas2.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,12 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_resposta_B",
-    "path":"sprites/S_resposta_B/S_resposta_B.yy",
+    "name":"S_resposta_D_02",
+    "path":"sprites/S_resposta_D_02/S_resposta_D_02.yy",
   },
-  "spriteMaskId":{
-    "name":"S_pergunta03",
-    "path":"sprites/S_pergunta03/S_pergunta03.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
