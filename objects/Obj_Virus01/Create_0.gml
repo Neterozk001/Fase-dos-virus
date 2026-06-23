@@ -1,7 +1,8 @@
 // Inherit the parent event
 event_inherited();
 vel = choose(1,-1);
-
+pontuado = false;
+tempo_morte = 20;
 
 
 andando = choose(true,false);

@@ -72,10 +72,24 @@ else
 	}
 }
 //chequando se eu estou tomando dano
-if(dano && morto == false)
+if(dano && !morto)
 {
-	sprite_index = S_Virus01_dano
-	velh = 0;
+    sprite_index = S_Virus01_dano;
+    velh = 0;
+
+    if(!pontuado)
+    {
+        global.pontos += 2;
+		show_debug_message("Pontos: " + string(global.pontos));
+        pontuado = true;
+    }
+
+    tempo_morte--;
+
+    if(tempo_morte <= 0)
+    {
+        morto = true;
+    }
 }
 
 //o que fazer quando eu morro

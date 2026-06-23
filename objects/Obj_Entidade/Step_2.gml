@@ -1,3 +1,9 @@
+if (variable_instance_exists(id, "morreu") && morreu)
+{
+    velh = 0;
+    velv = 0;
+    exit;
+}
 //colisão Horizontal
 
 //colisão parede

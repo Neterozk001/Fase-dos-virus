@@ -9,23 +9,38 @@ switch(estado)
 		  if(_player)
 		  {
 			 //checando se ele apertou a ceta para cima
-			 if keyboard_check_pressed(ord("W"))
-			 {
-				 estado = "abrindo";
-			 }
+			if keyboard_check_pressed(ord("W"))
+            {
+                if(global.pontos >= 10)
+                {
+                   estado = "abrindo";
+                }
+                else
+                {
+                   show_debug_message("Você precisa de 10 pontos!");
+                }
+            }
 		  }
 	break;
 	
 	case "abrindo":
 	      mudando_sprite(S_porta_abre);
 		  //terminou de abrir ela fica parada
-		  if (image_index >= image_number - 1)
-		  {
-			  image_speed = 0;  
-		  }
+		 if (image_index >= image_number - 1)
+         {
+             image_speed = 0;
+             room_goto(Room_QUIZ);
+         }
 	break;
 	
 	case "fechando":
 	      mudando_sprite(S_porta_fecha);
+		  //saindo do estado de fechando
+		  if(image_index >= image_number - 1)
+		  {
+			  estado = "idle";
+		  }
+		  
+		  
 	break;
 }

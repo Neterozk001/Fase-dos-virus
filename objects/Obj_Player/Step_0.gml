@@ -1,3 +1,13 @@
+if(morreu)
+{
+    sprite_index = S_Player_dead;
+    velh = 0;
+    velv = 0;
+
+    image_speed = 0.2;
+
+    exit;
+}
 //Controlando o Player
 var _chao = place_meeting(x , y + 1, Obj_chao);
 
@@ -98,9 +108,47 @@ if(_inimigo && inv_timer <= 0)
 	if(_inimigo.morto == false && _inimigo.dano == false)
 {
 	//dando o valor timer dano
+	vida -= 1;
+	show_debug_message("Vida: " + string(vida));
 	timer_dano = tempo_dano;
 	inv_timer = inv_tempo;
 	dano = true;
    sprite_index = S_Player_dano;
 }
+}
+if(vida <= 0 && morreu == false)
+{
+    morreu = true;
+
+    sprite_index = S_Player_dead;
+    image_index = 0;
+    image_speed = 0.2;
+
+    velh = 0;
+    velv = 0;
+
+    var msg = instance_create_depth(
+        display_get_gui_width()/2,
+        200,
+        0,
+        Obj_mensagem
+    );
+
+    msg.texto = "GAME OVER";
+
+    alarm[0] = room_speed * 3;
+}
+
+if(global.pontos >= 10 && !objetivo_concluido)
+{
+    objetivo_concluido = true;
+
+    var msg = instance_create_layer(
+        display_get_gui_width()/2,
+        150,
+        "Instances_1",
+        Obj_mensagem
+    );
+
+    msg.texto = "OBJETIVO CONCLUIDO!";
 }

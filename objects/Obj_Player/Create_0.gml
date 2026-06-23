@@ -1,3 +1,9 @@
+max_vida = 3;
+vida = max_vida;
+morreu = false;
+global.pontos = 0;
+objetivo_concluido = false;
+
 velh = 0;
 velv = 0;
 vel  = 4;
