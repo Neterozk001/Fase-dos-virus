@@ -2,7 +2,8 @@ total = 20;
 
 usadas = array_create(total, false);
 
-pergunta_atual = irandom(19);
+pergunta_atual = irandom(total - 1);
+usadas[pergunta_atual] = true;
 
 tentativas = 2;
 quiz_pontos = 0;

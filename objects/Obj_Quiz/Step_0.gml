@@ -64,7 +64,7 @@ if(quiz_pontos >= 30)
         room_goto(Room1_1);
     }
 }
-function pegar_pergunta_nova()
+/* function pegar_pergunta_nova()
 {
     var i;
     
@@ -80,4 +80,35 @@ function pegar_pergunta_nova()
 
     // se acabou perguntas
     show_debug_message("Fim do quiz");
+}
+*/
+function pegar_pergunta_nova()
+{
+    // Verifica se ainda existem perguntas disponíveis
+    var restantes = 0;
+
+    for (var i = 0; i < total; i++)
+    {
+        if (!usadas[i])
+            restantes++;
+    }
+
+    if (restantes == 0)
+    {
+        show_debug_message("Fim do quiz");
+        return;
+    }
+
+    // Sorteia até encontrar uma pergunta não usada
+    repeat (100)
+    {
+        var p = irandom(total - 1);
+
+        if (!usadas[p])
+        {
+            pergunta_atual = p;
+            usadas[p] = true;
+            return;
+        }
+    }
 }
